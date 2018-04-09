@@ -16,6 +16,6 @@ dt = datetime.now().replace(tzinfo=hkt).date()
 data = {titles[i]: values[i] for i in range(0, 4)}
 data['date'] = dt
 data={'nome':'gentiloni' , 'id': '1', 'tipo':'org', 'subtype':'gov'}
-scraperwiki.sqlite.save(unique_keys=['id'], data=data)
+scraperwiki.sqlite.save(unique_keys=['id'], org=data)
 data={'given_name':'orlando' , 'id': '2', 'tipo':'person', 'org_id':'1'}
-scraperwiki.sqlite.save(unique_keys=['id'], data=data)
+scraperwiki.sqlite.save(unique_keys=['id'], person=data)
