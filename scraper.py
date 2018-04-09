@@ -15,5 +15,5 @@ hkt = pytz.timezone('Asia/Hong_Kong')
 dt = datetime.now().replace(tzinfo=hkt).date()
 data = {titles[i]: values[i] for i in range(0, 4)}
 data['date'] = dt
-data={'Gentiloni':'prova', 'id': '20180408'}
+data={'Gentiloni': {'item': 'prova'}, 'id': '20180408'}
 scraperwiki.sqlite.save(unique_keys=['id'], data=data)
